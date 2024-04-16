@@ -1,8 +1,8 @@
-const Genero = require('../allModels/genero')
+const Genero = require('../models/genero')
 const {request, response} = require('express')
 
 
-const obtenerGeneros= async (
+const obtenerGenero= async (
     req = request, res = response
 ) => {
     try{
@@ -66,7 +66,7 @@ const borrarGenero = async (
 }
 
 module.exports = {
-    obtenerGeneros,
+    obtenerGenero,
     crearGenero,
     actualizarGenero,
     borrarGenero

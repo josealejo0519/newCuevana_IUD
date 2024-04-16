@@ -1,15 +1,15 @@
 const {
-    obtenerGeneros,
+    obtenerGenero,
     crearGenero,
     actualizarGenero,
     borrarGenero
-} = require('../allControllers/genController')
+} = require('../controllers/generoControllers')
 
 const { Router } = require('express')
 const router = Router ()
 
 //consultar generos
-router.get('/', obtenerGeneros)
+router.get('/', obtenerGenero)
 
 //crear genero
 router.post('/', crearGenero)
